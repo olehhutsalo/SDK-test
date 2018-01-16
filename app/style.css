@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    font: 14px Helvetica, Arial, sans-serif;
+}
+body, html {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    padding: 32px;
+}
+.wrapper{
+    height: 80vh;
+    border: 2px solid gray;
+    display: flex;
+}
+.search-bar{
+    height: 100%;
+    width: 30%;
+    min-width: 210px;
+    overflow-y: scroll;
+}
+.filter-form{
+    margin: 16px
+}
+.radio-box-filter{
+    margin: 5px;
+}
+.results-list{
+    width: 70%;
+    min-width: 300px;
+    overflow-y: scroll;
+}
+.sdk-list-elements{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.sdk-list-elements > li > div> p:first-child{
+    font-size: 1.5em;
+}
+.sdk-list-elements > li{
+    margin: 16px;
+}
+
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border: 2px solid gray;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+
+    border: 2px solid gray;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-button {
+    background-size: 100%;
+    height: 5px;
+    width: 10px;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-button:end {
+    display: block;
+}
+
+::-webkit-scrollbar-button:start {
+    display: block;
+}
+
+
+::-webkit-scrollbar-button:vertical:increment:end { /* Down */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVklEQVQ4T93S0QoAEAwF0OvLzZ+LwrCN5Y0XJfeoawGPKzzm8RFAAKKzjwSAeAcepIbLg2uJN0gPS0A5s5AprAEasoUtYEXE8AloCN+3j/poEp1DOK5nfmcNES1z5SIAAAAASUVORK5CYII=);
+}
+
+::-webkit-scrollbar-button:vertical:decrement:start { /* Up */
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAVUlEQVQ4T2NkoBAwUqifYfAb0AD1IozG8DE+L4A01UN1NDIwMGA1BJcByJphtmI1BJsB2DTjNATdAHyasRqCbAAxmjEMgRlAimYUQwZ/QiKYVQbeCwBFhQ0RcSHRhgAAAABJRU5ErkJggg==);
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f8f8;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #aaa;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #989898;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #808080;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}

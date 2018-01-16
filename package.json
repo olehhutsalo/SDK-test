@@ -1,0 +1,20 @@
+{
+  "name": "sdk-test",
+  "version": "1.0.0",
+  "description": "sample project",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/.bin/webpack-dev-server --content-base app"
+  },
+  "author": "Oleh Hutsalo",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.8",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0"
+  }
+}

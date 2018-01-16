@@ -1,0 +1,8 @@
+ <ul class="sdk-list-elements" ng-init="ctrl.init()">
+    <li ng-repeat="sdkItem in ctrl.sdk" ng-show="ctrl.idToDisplay.includes(sdkItem.id)">
+        <div>
+            <p>{{::sdkItem.title}}</p>
+            <p>{{::sdkItem.tags.join(', ')}}</p>
+        </div>
+    </li>
+</ul>

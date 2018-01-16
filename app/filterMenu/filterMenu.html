@@ -1,0 +1,23 @@
+<form ng-model-options="{ debounce: 100 }" class="filter-form">
+    <!--Radio button for search-->
+    <input class="radio-box-filter" type="radio" id="radio-search" name="search"
+           ng-model="ctrl.selectedFilter" ng-value="'search'">
+    <input placeholder="Search"
+           type="search"
+           ng-model="ctrl.searchString"
+           ng-change="ctrl.updateSdkList()"
+           ng-focus="ctrl.selectedFilter = 'search'"/>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    <br>
+
+    <!--Radio button for all tags-->
+    <input class="radio-box-filter" type="radio" id="radio-all" name="radio-all"
+           ng-model="ctrl.selectedFilter" ng-value="'all'">
+    <label class="radio-label" for="radio-all">All</label>
+
+    <!--Radio button for particular tag-->
+    <div ng-repeat="tag in ctrl.tags">
+        <input class="radio-box-filter" type="radio" id="{{'radio-' + tag}}" name="{{'radio-' + tag}}"
+               ng-model="ctrl.selectedFilter" ng-value="'tag:'+ tag">
+        <label class="radio-label" for="{{'radio-' + tag}}">{{::tag}}</label>
+    </div>
+</form>
